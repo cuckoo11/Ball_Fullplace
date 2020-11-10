@@ -2,12 +2,14 @@ let ball = [];
 
 
 function setup() {
-  cnv = createCanvas(1000, 1000);
+  cnv = createCanvas(700, 700);
 
   for (let i = 0; i < 300; i++) {
     ball[i] = new Ball(random(width),random(height),random(30, 70),i,ball);
   }
-    fill(random(0,255),random(0,255),random(0,255));
+    fill(random(0,255),random(0,255),random(0,255), 200);
+    stroke(255);
+    strokeWeight(3);
 }
 
 function draw() {
